@@ -1,0 +1,21 @@
+balance=200.0 
+print(" > > > >  Millenia  < < < <  ") 
+print ('Hello!') 
+PINCODE = int(input('ENTER your PINCODE: ')) 
+if PINCODE == (0000):
+ print('Your PINCODE Is Correct\n') 
+print(""" 
+1)        Check your account Balance 
+2)        Withdraw Money 
+3)        Cancel 
+ """) 
+Option=int(input("Enter Option: "))
+if Option==1:
+   print('Balance EUR', balance) 
+if Option==2: 
+   withdrawvalue=input("How much do you want to withdraw money?") 
+print('Withdrawing...')
+print ("Thank you for using Millenia" )
+if Option==3: 
+  print('Thank You for using Millenia\n') 
+  print("PLEASE TAKE YOUR CARD") 
