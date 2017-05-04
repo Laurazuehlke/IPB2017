@@ -1,0 +1,26 @@
+SELECT * FROM Customers WHERE Country='Germany'
+SELECT * FROM [OrderDetails] WHERE Quantity>10
+
+
+SELECT A.ContactName, B.*
+FROM Customers A, Orders B
+WHERE A.CustomerID = B.CustomerID
+ORDER BY A.ContactName
+
+SELECT A.ContactName, B.*, C.*
+FROM Customers A, Orders B, OrderDetails C
+WHERE A.CustomerID = B.CustomerID
+AND B.OrderID = C.OrderID
+ORDER BY A.ContactName
+
+SELECT A.ContactName, B.*, C.*
+FROM Customers A, Orders B, OrderDetails C
+WHERE A.CustomerID = B.CustomerID
+AND B.OrderID = C.OrderID AND Quantity>10
+ORDER BY A.ContactName
+
+SELECT A.Country, B.*, C.*
+FROM Customers A, Orders B, OrderDetails C
+WHERE A.CustomerID = B.CustomerID
+AND B.OrderID = C.OrderID AND Quantity>10
+ORDER BY A.Country
